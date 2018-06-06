@@ -1,109 +1,54 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <title>Last lesson</title>
+    <meta charset="UTF-8">
+    <title>h0_sang page</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Quicksand:500">
+    <script type="text/javascript" src="js/script.js"></script>
+    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+      $(window).on('scroll', function() {
+        if($(window).scrollTop()) {
+          $('nav').addClass('black');
+        }
+        else {
+          $('nav').removeClass('black')
+        }
+      })
+    </script>
   </head>
   <body>
-    <header>
-      <img src="images/header.jpg" alt="header"/>
-      <h1>Welcome to my page</h1>
-    </header>
-    <div class="navbar">
+    <nav>
+      <img src="images/Logo_white.png"/>
       <ul>
         <li><a href="#">Home</a></li>
-
-        <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">News</a>
-        <div class="dropdown-content">
-          <a href="#">Viktor @R</a>
-          <a href="#">Slava @K</a>
-          <a href="#">Ihor @h</a>
-        </div>
-        </li>
-
+        <li><a href="#">News</a></li>
         <li><a href="#">About me</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a class="active" href="#">Post</a></li>
       </ul>
-    </div>
-
-    <aside>
-      <div class="leftcolumn">
-        <div class="card">
-          <h2>Do you like the cyberpunk?</h2>
-          <h5>Do you like the cyberpunk?, May 26, 2018</h5>
-          <img src="images/post1.jpg" alt="firstpost"/ width="50%" height="50%">
-          <p>Cyberpunk</p>
-          <p>Cyberpunk is a subgenre of science fiction in a futuristic setting that tends to focus on a "combination of lowlife and high tech" featuring advanced technological and scientific achievements, such as artificial intelligence and cybernetics, juxtaposed with a degree of breakdown or radical change in the social order....</p>
-          <button type="button"><a href="page/post_1.html">View more</a></button>
-        </div>
-        <div class="card">
-          <h2>New impressive gallery</h2>
-          <h5>New impressive gallery, May 22, 2018</h5>
-          <div class="dropdown_img1">
-            <img src="images/image1.jpg" alt="cyberpunk" width="300" height="195">
-            <div class="dropdown_img1-content">
-              <img src="images/image1.jpg" alt="cyberpunk" width="900" height="585">
-              <div class="desc">
-                Cyberpunk. Image1
-              </div>
-            </div>
-          </div>
-
-
-          <div class="dropdown_img2">
-            <img src="images/image2.jpg" alt="cyberpunk" width="300" height="195">
-            <div class="dropdown_img2-content">
-              <img src="images/image2.jpg" alt="cyberpunk" width="900" height="585">
-              <div class="desc">
-                Cyberpunk. Image2
-              </div>
-            </div>
-          </div>
-
-          <div class="dropdown_img3">
-            <img src="images/image3.jpg" alt="cyberpunk" width="300" height="195">
-            <div class="dropdown_img3-content">
-              <img src="images/image3.jpg" alt="cyberpunk" width="900" height="585">
-              <div class="desc">
-                Cyberpunk. Image3
-              </div>
-            </div>
-          </div>
-        <button type="button" href="#">View more</button>
-      </div>
-
-      <div class="card">
-        <h2>History and origins</h2>
-        <h5>History and origins, May 18, 2018</h5>
-        <img src="images/post3.jpg" alt="firstpost"/ width="50%" height="50%">
-        <p>History</p>
-        <p>The origins of cyberpunk are rooted in the New Wave science fiction movement of the 1960s and 70s, where New Worlds, under the editorship of Michael Moorcock, began inviting and encouraging stories that examined new writing styles, techniques, and archetypes. Reacting to conventional storytelling, New Wave authors attempted to present a world where society coped with a constant upheaval of new technology and culture, generally with dystopian outcomes. Writers like Roger Zelazny, J.G. Ballard, Philip Jose Farmer, and Harlan Ellison often examined the impact of drug culture, technology, and the sexual revolution with an avant-garde style influenced by the Beat Generation (especially William S. Burroughs' own SF), dadaism, and their own ideas.[10] Ballard attacked the idea that stories should follow the "archetypes" popular since the time of Ancient Greece, and the assumption that these would somehow be the same ones that would call to modern readers, as Joseph Campbell argued in The Hero with a Thousand Faces. Instead, Ballard wanted to write a new myth for the modern reader, a style with "more psycho-literary ideas, more meta-biological and meta-chemical concepts, private time systems, synthetic psychologies and space-times, more of the sombre half-worlds one glimpses in the paintings of schizophrenics."
-        </p>
-        <button type="button" href="#">View more</button>
-      </div>
-      </div>
-    </aside>
-    <footer>
-      <div class="footer_left">
-        <div class="address">
-          <img src="images/address.png" alt="address" width="50px" height="50px"/>
-          <p>25 Steaming Street, Izjevsk, Russia</p>
-        </div>
-        <div class="number">
-          <img src="images/phone.png" alt="address" width="50px" height="50px"/>
-          <p>+1 555 123456</p>
-        </div>
-        <div class="gmail">
-          <img src="images/mail.png" alt="address" width="50px" height="50px"/>
-          <p>DonkeyJewi@gmail.com</p>
-        </div>
-      </div>
-      <div class="footer_right">
-        <h4>Внимание!</h4>
-        <p>Данный сайт находится в стадии разработки, если Вы обнаружили баг, по прошу сообщить об этом творцу.</p>
-        <span class="admin">С уважением творец.</span> @h0_sang
-      </div>
-    </footer>
-  </body>
+    </nav>
+    <section class="sec1"></section>
+    <section class="content">
+      <p>Что такое Lorem Ipsum?
+Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+<p>Что такое Lorem Ipsum?
+Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+<p>Что такое Lorem Ipsum?
+Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+<p>Что такое Lorem Ipsum?
+Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+<p>Что такое Lorem Ipsum?
+Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+<p>Что такое Lorem Ipsum?
+Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+<p>Что такое Lorem Ipsum?
+Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+<p>Что такое Lorem Ipsum?
+Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
+  </section>
+  <footer>
+    <p class="footer">Деньги просто делают жизнь более комфортной, но не заменяют саму жизнь.</p>
+  </footer>
+</body>
 </html>
