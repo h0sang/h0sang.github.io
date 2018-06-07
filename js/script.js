@@ -1,4 +1,4 @@
-"use stict"
+/*"use stict"
 var name = prompt("Как тебя зовут?", " ");
 alert("Здраствуй " + name);
 var year = prompt("Сколько тебе лет? "+name, " ");

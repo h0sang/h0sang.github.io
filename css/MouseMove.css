@@ -1,0 +1,34 @@
+.page-container {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: #fff;
+}
+
+.page-back {
+  width: 120%;
+  height: 120%;
+  left: -10%;
+  top: -10%;
+  position: absolute;
+  background-image: url("../images/mousemove.jpg");
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: blur(3px);
+}
+
+h1 {
+  position: absolute;
+  margin-left: 85%;
+  margin-top: 45%;
+  font-family: "Painting in the Sunlight";
+  font-size: 50px;
+  color: white;
+}
+
+@font-face {
+  font-family: "Painting in the Sunlight";
+  src: url("fonts/Painting in the Sunlight.ttf") format("truetype");
+  font-size: normal;
+  font-weight: normal;
+}

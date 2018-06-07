@@ -6,47 +6,75 @@
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Quicksand:500">
     <script type="text/javascript" src="js/script.js"></script>
-    <script src="http://code.jquery.com/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="js/jquery-3.3.1.js"></script>
     <script>
       $(window).on('scroll', function() {
         if($(window).scrollTop()) {
           $('nav').addClass('black');
+          $('button').addClass('black');
         }
         else {
           $('nav').removeClass('black')
+          $('button').removeClass('black')
         }
       })
     </script>
   </head>
+
+
   <body>
-    <nav>
-      <img src="images/Logo_white.png"/>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">News</a></li>
-        <li><a href="#">About me</a></li>
-        <li><a class="active" href="#">Post</a></li>
-      </ul>
-    </nav>
+    <header>
+      <nav>
+        <img src="images/Logo_white.png"/>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">News</a>
+            <ul>
+              <li><a href="pages/Animation MouseMove.html">MouseMove</a></li>
+              <li><a href="pages/Gallery.html">Gallery</a></li>
+              <li><a href="#">test3</a></li>
+            </ul>
+          </li>
+          <li><a href="pages/Contact.html">Contact</a></li>
+          <li><button onclick="playAudio()" type="button"><a href="pages/Post.html">Post</a></button></li>
+        </ul>
+      </nav>
+    </header>
     <section class="sec1"></section>
     <section class="content">
-      <p>Что такое Lorem Ipsum?
-Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-<p>Что такое Lorem Ipsum?
-Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-<p>Что такое Lorem Ipsum?
-Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-<p>Что такое Lorem Ipsum?
-Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-<p>Что такое Lorem Ipsum?
-Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-<p>Что такое Lorem Ipsum?
-Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-<p>Что такое Lorem Ipsum?
-Lorem Ipsum - это текст-"рыба", часто используемый в печати и вэб-дизайне. Lorem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн. Его популяризации в новое время послужили публикация листов Letraset с образцами Lorem Ipsum в 60-х годах и, в более недавнее время, программы электронной вёрстки типа Aldus PageMaker, в шаблонах которых используется Lorem Ipsum.</p>
-  </section>
+      <h2>Well hello :)</h2>
+      <p>Hideo Kojima (小島 秀夫 Kojima Hideo, born August 24, 1963) is a Japanese video game designer, screenwriter, director, and game producer. Regarded as an auteur of video games, he founded Kojima Productions in 2005, after starting at Konami Digital Entertainment where he rose to vice president in 2011. Since the end of 2015, Kojima has been an independent game developer.
+His most notable video game is the Metal Gear series of stealth games, as well as the adventure games Snatcher and Policenauts. He has also produced Zone of the Enders, Boktai, and Castlevania: Lords of Shadow.</p>
+      <p>Early life
+Kojima was born the third of three children in Setagaya, Tokyo, Japan. The family moved to Osaka when he was about four years old. The family watched movies every night and he "wasn't allowed to go to bed till the film had finished".
+When he was young, the Kojima family moved to a small city called Shirasaki. His family soon[when?] moved to Kawanishi, Hyōgo in the Kansai region.[9] He was 13 years old when his father died and Kojima has commented that early on in his life he had to deal with death. Kojima was a latchkey kid, often having to look after himself when he came home from school. Staying at home by himself in isolation still affected him as he stated in a 2004 interview, "[whenever] I travel and stay at a hotel I put the TV on as soon as I enter the room, just to deal with the feeling of loneliness".
+He wanted to be an artist, filmmaker, or illustrator, but felt discouraged by the pressure of social norms favoring a stable, salaried job over creative pursuits, and also because his uncle was an artist who struggled to make a living. The death of Kojima's father, which left the entire family poorer, was another reason. As a young adult, he began studying economics while writing short stories in his spare time; he submitted some of these to magazines but was not able to get anything published. He cites that his stories were often 400 pages long while most magazines wanted their short stories to be around 100 pages. Eventually, he shifted his creative focus to making films with a friend who had an 8mm camera.</p>
+      <p>Career
+In an interview on G4's TV series Icons, While studying economics in university, Kojima found himself playing video games during his free time, mainly games on the Famicom. In his fourth year in university, Kojima surprised his peers by announcing his intentions to join the video game industry, despite initially having ambitions of becoming a film director. He felt a career in video games would be more satisfying. The majority of his friends and peers strongly discouraged Kojima from pursuing video games due to it being a new medium that was not as respected or financially secure. His mother, however, remained supportive which gave Kojima the confidence to go ahead with his dream. He would later reflect positively upon his choice, stating, "The industry was full of dropouts, people who felt like games offered them another chance. I met many people in that same situation; we bonded together through that in some sense". Kojima has cited Shigeru Miyamoto's Super Mario Bros. (1985) and Yuji Horii's The Portopia Serial Murder Case (1983) as the games that inspired him to make this decision. He cited Hydlide's open world game design as an influence. His literary influences include Kobo Abe, Ryu Murakami, Yukio Mishima, Kazuaki Takano, Project Itoh, Yasutaka Tsutsui, Seicho Matsumoto, Richard Levinson, William Link, and Paul Auster.</p>
+      <hr/>
+      <h2>Ну приветик :)</h2>
+      <p>Хидэо Кодзима (яп. 小島 秀夫 Кодзима Хидэо, 24 августа 1963, Токио) — японский геймдизайнер, сценарист и продюсер разработки компьютерных игр. Глава собственной студии по разработке компьютерных игр Kojima Productions, в прошлом — вице-президент Konami Digital Entertainment. Кодзима наиболее известен как создатель серии игр Metal Gear, а также квестов Snatcher и Policenauts. Он также выступал продюсером других игр и серий, в том числе Zone of the Enders, Boktai и Castlevania: Lords of Shadow.</p>
+      <p>Ранние годы
+Кодзима родился в Токио, Япония и затем переехал в западную часть Японии в возрасте трёх лет. По его словам, ему пришлось достаточно рано столкнуться со смертью, так как его отец умер, когда ему было лишь 13 лет.
+Пока он был маленьким, семья Кодзимы переехала сначала в небольшой городок Сирасаки, а затем в Каваниси, префектура Хёго. Кодзима упоминал, что по мере взросления не было никого, кто бы присматривал за ним после школы. Время, проводимое дома в полной изоляции и одиночестве оставило свой след. По словам Кодзимы, «Когда я во время путешествий остаюсь в гостинице, я включаю телевизор едва зайдя в номер, чтобы совладать с чувством одиночества.»
+Сначала он хотел стать художником или иллюстратором, но его стремления часто вызывали непонимание из-за строгих социальных норм Японии, в которой престижной считается стабильная хорошо оплачиваемая работа. Его дядя также был иллюстратором и часто испытывал финансовые затруднения, что также удручало Кодзиму. Ранняя смерть отца и шаткая финансовая ситуация в семье также повлияли на выбор Кодзимы. В итоге он начал писать короткие рассказы и пытался отправлять их в японские журналы, но всё время получал отказ в публикации. Зачастую его истории были длиннее 400 страниц, в то время как большинство журналов публиковало короткие рассказы, чья длина не превышала и сотни. После этого он решил заняться съёмкой фильмов вместе со своим другом, у которого имелась 8-миллиметровая камера.</p>
+      <p>Карьера
+В 1986 был принят в компанию Konami на должность дизайнера в подразделении, занимавшемся проектами для MSX.
+Первая игра, над которой работал Кодзима в роли ассистента режиссёра — Penguin Adventure. Первый разработанный им проект — Lost Warld (был отменён Konami).
+Первый выпущенный проект — Metal Gear для MSX 2 (компьютер был популярен в основном в Европе и Японии, поэтому в США игра была издана значительно позже для Nintendo Entertainment System). Metal Gear уникален тем, что явил миру stealth-action, в котором большую часть времени предполагалось не сражаться, а прятаться от противников, а сами вооружённые столкновения были крайне невыгодны игроку.
+В 1988 году Кодзима принял участие в разработке Snatcher, приключенческой видеоигры с элементами киберпанка. Игрок олицетворялся с Гиллианом Сидом, жителем огромного мегаполиса Нео-Кобе. По ходу игры он должен был узнать правду о своём прошлом. Несмотря на критику, проект был довольно успешен.
+В 1990 году выходит Metal Gear 2: Solid Snake для MSX и только в Японии, одна из лучших игр в серии MGS. Кодзима не стал менять формулу игрового процесса, уделив значительно больше внимания сюжету игры.
+В 1992 году выходит ремейк Snatcher для PC-Engine, названный Snatcher CD-ROMantic, а в 1994 — Policenauts, приключенческая игра в стиле нуар. В 1996 оба проекта портированы на Sony PlayStation.
+Долгожданный релиз Metal Gear Solid на PS превращает Кодзиму в звезду игровой индустрии. Этот проект впервые в серии MGS использовал 3D-графику, также он имел серьёзный сюжет и пришёлся по душе большинству игроков.
+В начале 2000-х годов Кодзима показал первые кадры Metal Gear Solid 2: Sons of Liberty, прямого продолжения Metal Gear Solid. Благодаря возможностям PlayStation 2 кинематографические вставки игры были весьма реалистичны, так же как графика и анимация. Проект вызвал и негативные отклики, связанные в основном с заменой Солида Снейка (главный герой предыдущих игр) на новичка Райдена, которому достался огромный второй эпизод игры.
+До выхода MGS2 Кодзима спродюсировал Zone of the Enders, шутер от третьего лица с аниме-вставками, и уникальный проект для GBA под названием Boktai (главная идея заключалась в наличии сенсора, реагирующего на солнечный свет. Вокруг этого была построена большая часть игрового процесса). А в 2004 году был выпущен ремейк Metal Gear Solid под названием Metal Gear Solid: The Twin Snakes для Nintendo GameCube. Ролики для игры срежиссировал известный азиатский режиссёр Рюхэй Китамура.
+Затем Кодзима занялся разработкой Metal Gear Solid 3, шпионским экшеном в стиле 60-х годов. Главным героем здесь был Биг Босс (Big Boss) — генетический отец Снейка. Позднее Konami издала расширенную версию игры — Metal Gear Solid 3: Subsistence.</p>
+      </section>
   <footer>
-    <p class="footer">Деньги просто делают жизнь более комфортной, но не заменяют саму жизнь.</p>
+    <ul>
+      <li>Деньги просто делают жизнь более комфортной, но не заменяют саму жизнь.</li>
+    </ul>
   </footer>
+  <embed src="music/bg_world.wav" loop="false" autostart="false" hidden="true" />
 </body>
 </html>

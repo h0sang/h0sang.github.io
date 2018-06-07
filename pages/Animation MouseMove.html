@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Easy mouse move</title>
+    <link rel="stylesheet" type="text/css" href="../css/MouseMove.css">
+    <script type="text/javascript" src="../js/jquery-3.3.1.js"></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="page-back">
+      </div>
+    </div>
+<h1>Wow wow wow ;)</h1>
+    <script type="text/javascript">
+      var windowWidth = $(window).width();
+
+      $('.page-container').mousemove(function(event) {
+
+      var moveX = (($(window).width() / 2) - event.pageX) * 0.1;
+      var moveY = (($(window).height() / 2) - event.pageY) * 0.1;
+      $('.page-back').css('margin-left', moveX + 'px');
+      $('.page-back').css('margin-top', moveY + 'px');
+      });
+    </script>
+
+  </body>
+</html>
